@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent;
-                intent = new Intent(MainActivity.this,CalendarView.class);
+                intent = new Intent(MainActivity.this, CalendarViewActivity.class);
                 startActivity(intent);
             }
         });
