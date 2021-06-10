@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ASMT3</string>
+    <string name="title_activity_vista_mapa">Map</string>
 </resources>
