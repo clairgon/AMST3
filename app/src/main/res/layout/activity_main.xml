@@ -4,7 +4,77 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_fab"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Menu"
+        android:layout_marginRight="15dp"
+        android:gravity="end"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/calendario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:gravity="end"
+        android:text="Calendario"
+        android:src="@drawable/calendario"
+        app:fabSize="normal"
+        android:cintentDescriotio="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="@id/add_fab"
+        app:layout_constraintEnd_toEndOf="@id/add_fab"
+        android:icon="@drawable/calendario"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/correo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:gravity="end"
+        android:text="Correo"
+        android:src="@drawable/correo"
+        app:fabSize="normal"
+        android:cintentDescriotio="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="@id/calendario"
+        app:layout_constraintEnd_toEndOf="@id/calendario"
+        android:icon="@drawable/correo"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/mapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:gravity="end"
+        android:text="Mapa"
+        android:src="@drawable/mapa"
+        app:fabSize="normal"
+        android:cintentDescriotio="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="@id/correo"
+        app:layout_constraintEnd_toEndOf="@id/correo"
+        android:icon="@drawable/mapa"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:gravity="end"
+        android:text="Video"
+        android:src="@drawable/video"
+        app:fabSize="normal"
+        android:cintentDescriotio="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="@id/mapa"
+        app:layout_constraintEnd_toEndOf="@id/mapa"
+        android:icon="@drawable/video"/>
 
     <Button
         android:id="@+id/button"
