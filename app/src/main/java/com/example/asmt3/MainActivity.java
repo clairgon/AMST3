@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent;
-                intent = new Intent(MainActivity.this,Calendario.class);
+                intent = new Intent(MainActivity.this,CalendarView.class);
                 startActivity(intent);
             }
         });
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent;
-                intent = new Intent(MainActivity.this,Correo.class);
+                intent = new Intent(MainActivity.this,CorreoView.class);
                 startActivity(intent);
             }
         });
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent;
-                intent = new Intent(MainActivity.this,Mapa.class);
+                intent = new Intent(MainActivity.this,MapaView.class);
                 startActivity(intent);
             }
         });
@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent;
-                intent = new Intent(MainActivity.this,Video.class);
+                intent = new Intent(MainActivity.this,VideoView.class);
                 startActivity(intent);
             }
         });
