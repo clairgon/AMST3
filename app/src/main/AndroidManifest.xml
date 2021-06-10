@@ -12,7 +12,7 @@
         <activity android:name=".MapaView"></activity>
         <activity android:name=".CorreoView" />
         <activity android:name=".VideoView" />
-        <activity android:name=".CalendarView" />
+        <activity android:name=".CalendarViewActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
