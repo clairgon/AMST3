@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -25,14 +25,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="80dp"
+        android:contentDescription="calendario"
         android:gravity="end"
-        android:text="Calendario"
+        android:icon="@drawable/calendario"
         android:src="@drawable/calendario"
+        android:text="Calendario"
         app:fabSize="normal"
-        android:cintentDescriotio="@string/app_name"
         app:layout_constraintBottom_toBottomOf="@id/add_fab"
-        app:layout_constraintEnd_toEndOf="@id/add_fab"
-        android:icon="@drawable/calendario"/>
+        tools:ignore="MissingConstraints" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/correo"
@@ -43,7 +43,7 @@
         android:text="Correo"
         android:src="@drawable/correo"
         app:fabSize="normal"
-        android:cintentDescriotio="@string/app_name"
+        android:contentDescription="@string/app_name"
         app:layout_constraintBottom_toBottomOf="@id/calendario"
         app:layout_constraintEnd_toEndOf="@id/calendario"
         android:icon="@drawable/correo"/>
@@ -57,7 +57,7 @@
         android:text="Mapa"
         android:src="@drawable/mapa"
         app:fabSize="normal"
-        android:cintentDescriotio="@string/app_name"
+        android:contentDescription="@string/app_name"
         app:layout_constraintBottom_toBottomOf="@id/correo"
         app:layout_constraintEnd_toEndOf="@id/correo"
         android:icon="@drawable/mapa"/>
@@ -71,7 +71,7 @@
         android:text="Video"
         android:src="@drawable/video"
         app:fabSize="normal"
-        android:cintentDescriotio="@string/app_name"
+        android:contentDescription="@string/app_name"
         app:layout_constraintBottom_toBottomOf="@id/mapa"
         app:layout_constraintEnd_toEndOf="@id/mapa"
         android:icon="@drawable/video"/>
@@ -83,7 +83,8 @@
         android:text="Button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="401dp" />
+        tools:layout_editor_absoluteY="401dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -94,4 +95,4 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

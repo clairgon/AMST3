@@ -5,7 +5,7 @@ import android.graphics.Color;
 import android.os.Build;
 import android.service.autofill.FillEventHistory;
 import android.service.autofill.FillEventHistory.Event;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.EventLog;
 import android.widget.CalendarView;
